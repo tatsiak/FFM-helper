@@ -14,6 +14,6 @@
       },
   
     "permissions": [
-        "webRequest", "webRequestBlocking", "https://midlayer-tst.fitformedev.nl/*", "http://admin-local.fitformedev.nl/*   "
+        "webRequest", "webRequestBlocking", "*://*.fitformedev.nl/"
       ]
   }

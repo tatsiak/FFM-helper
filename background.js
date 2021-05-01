@@ -1,5 +1,6 @@
 chrome.webRequest.onHeadersReceived.addListener(
   function (details) {
+    console.log('here')
     const responseHeaders = details.responseHeaders;
     responseHeaders.map((header) => {
       if (header.name === "set-cookie") {
@@ -13,7 +14,7 @@ chrome.webRequest.onHeadersReceived.addListener(
     return { responseHeaders };
   },
   {
-    urls: ["https://midlayer-tst.fitformedev.nl/*"],
+    urls: ["*://*.fitformedev.nl/*"],
   },
   ["blocking", "responseHeaders", "extraHeaders"]
 );
