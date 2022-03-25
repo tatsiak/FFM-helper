@@ -1,19 +1,23 @@
 {
-    "manifest_version": 2,
-    "name": "FFM helper",
-    "version": "0.0.1",
-  
-    "description": "Browser extension that modifies set cookies headers for exact domain",
+  "manifest_version": 2,
+  "name": "FFM helper",
+  "version": "0.0.1",
 
-    "author": "Serhii Tatsiak",
-  
-    "incognito": "not_allowed",
-    "background": {
-        "scripts": ["background.js"],
-        "persistent": true
-      },
-  
-    "permissions": [
-        "webRequest", "webRequestBlocking", "*://*.fitformedev.nl/"
-      ]
-  }
+  "description": "Browser extension that modifies set cookies headers for exact domain",
+
+  "author": "Serhii Tatsiak",
+
+  "incognito": "not_allowed",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://*.fitformedev.nl/",
+    "*://*.swan.local/",
+    "*://*.swan.market/"
+  ]
+}
